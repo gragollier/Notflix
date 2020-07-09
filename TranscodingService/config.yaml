@@ -1,0 +1,15 @@
+transcode_consumer:
+  broker: "kafka:9093"
+  topic: "transcode"
+  group_id: "transcode-service"
+
+post_transcode_producer:
+  broker: "kafka:9093"
+  topic: "post-transcode"
+
+s3:
+  endpoint_url: "http://minio:9000"
+  aws_access_key: "dev_access_key"
+  aws_secret_key: "dev_secret_key"
+  sig_version: "s3v4"
+  region: "us-east-1"

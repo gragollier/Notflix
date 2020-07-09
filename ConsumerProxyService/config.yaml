@@ -1,0 +1,5 @@
+metadataStorageService:
+  host: http://metadata-storage-service-1:4000
+
+edgeNodeProviderService:
+  host: http://edge-node-provider-service-1:4500

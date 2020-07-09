@@ -1,0 +1,45 @@
+{
+    "metadata": {
+        "settings": {
+            "analysis": {
+                "analyzer": {
+                    "search_analyzer": {
+                        "tokenizer": "search_tokenizer",
+                        "filter": [
+                            "lowercase"
+                        ]
+                    }
+                },
+                "tokenizer": {
+                    "search_tokenizer": {
+                        "type": "ngram",
+                        "min_gram": 3,
+                        "max_gram": 3,
+                        "token_chars": [
+                            "letter",
+                            "digit"
+                        ]
+                    }
+                }
+            }
+        },
+        "mappings": {
+            "properties": {
+                "search_field": { 
+                    "type": "text",
+                    "fields": {
+                        "ngram": {
+                            "type": "text",
+                            "analyzer": "search_analyzer"
+                        }
+                    }
+                },
+                "title": { "type": "text" },
+                "subtitle": { "type": "text" },
+                "synopsis": { "type": "text" },
+                "id": { "type": "keyword" },
+                "live": { "type": "boolean" }
+            }
+        }
+    }
+}

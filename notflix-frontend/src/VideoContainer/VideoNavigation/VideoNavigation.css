@@ -1,0 +1,17 @@
+.video-navigation {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.close-video-nav-button {
+    background-color: black;
+    border: none;
+    outline: none;
+}
+
+.close-video-nav-button:active {
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,19 @@
+kafka:
+  broker: "kafka:9093"
+  topic: "post-transcode"
+  group_id: "video-post-processor"
+
+s3:
+  endpoint_url: "http://minio:9000"
+  aws_access_key: "dev_access_key"
+  aws_secret_key: "dev_secret_key"
+  sig_version: "s3v4"
+  region: "us-east-1"
+
+metadata-storage-service:
+  host: http://metadata-storage-service-1:4000
+
+edge-nodes:
+  - host: edge1
+    port: 22
+    key: id_rsa

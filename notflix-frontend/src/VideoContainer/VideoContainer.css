@@ -1,0 +1,15 @@
+.video-container {
+    position: relative;
+    padding-top: 95vh;
+    background: black;
+}
+   
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+video {
+    outline: none;
+}
