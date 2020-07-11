@@ -55,7 +55,16 @@ if __name__ == "__main__":
             "object": s3_filename
         },
         'metadata': {
-            'target-bitrates': [4000, 2400]
+            'targets': [
+                {
+                    'bitrate': 4000,
+                    'resolution': 1080
+                }, 
+                {
+                    'bitrate': 2400,
+                    'resolution': 720
+                }
+            ]
         }
     }
 

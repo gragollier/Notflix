@@ -74,5 +74,3 @@ No real argument about scalability here. As far as frontend frameworks go, I lik
 * iOS doesn't support playing Dash files, so currently this doesn't work on iOS. The planned solution is to also create HLS manifests during transcoding and the frontend will automatically choose between Dash and HLS depending on the device.
 
 * The whole user Ingress flow needs to be developed. As of right now the "Ingress Service" is a Python script that requires manual editing to actually do anything useful.
-
-* TranscodingService needs support for multiple resolutions as well as bitrates. It currently keeps the source resolution and just transcodes to the desired bitrate.
