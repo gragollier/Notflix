@@ -4,12 +4,16 @@ from botocore.exceptions import ClientError
 import json
 from kafka import KafkaConsumer
 import logging
+import os
 import time
 import yaml
 import metadata_updater
 import seeder
 
 if __name__ == "__main__":
+    LOG_LEVEL = os.getenv('LOG_LEVEL', default='INFO').upper()
+    logging.basicConfig(level=LOG_LEVEL)
+
     with open("config.yaml", "rb") as config_file:
         config = yaml.safe_load(config_file)
 

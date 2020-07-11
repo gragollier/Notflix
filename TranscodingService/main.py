@@ -10,6 +10,9 @@ import yaml
 import transcoder
 
 if __name__ == "__main__":
+    LOG_LEVEL = os.getenv('LOG_LEVEL', default='INFO').upper()
+    logging.basicConfig(level=LOG_LEVEL)
+
     logging.info("Starting transcoding service")
     with open("config.yaml", "rb") as config_file:
         config = yaml.safe_load(config_file)
