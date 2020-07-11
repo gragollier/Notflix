@@ -55,6 +55,13 @@ services:
     ports:
       - 4500:4500
 
+  notflix-frontend:
+    build: ./notflix-frontend
+    ports:
+      - 3000:80
+    depends_on: 
+      - consumer-proxy-service-1
+
   minio:
     image: minio/minio:latest
     ports:
