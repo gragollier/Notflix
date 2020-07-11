@@ -18,15 +18,10 @@ if __name__ == "__main__":
                         region_name='us-east-1'
     )
 
-    # file_name = "Doctor.Sleep.mp4"
     file_name = "1280.mp4"
 
     s3_filename = secrets.token_hex(20) + file_name
     
-    # title = "Doctor Sleep"
-    # synopsis = 'Struggling with alcoholism, Dan Torrance remains traumatized by the sinister events that occurred at the Overlook Hotel when he was a child. His hope for a peaceful existence soon becomes shattered when he meets Abra, a teen who shares his extrasensory gift of the "shine." Together, they form an unlikely alliance to battle the True Knot, a cult whose members try to feed off the shine of innocents to become immortal.'
-    # subtitle = "Spooky scary"
-
     title = "Sintel"
     subtitle = "Blender foundation presents"
     synopsis = "The dragon movie you'll never forget"
